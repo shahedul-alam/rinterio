@@ -27,6 +27,7 @@
         },
         extend: {
           colors: {
+            'header-btn': 'rgb(28, 28, 28)',
             btn: 'rgb(171, 239, 95)',
             primary: 'rgb(33, 33, 33)',
             secondary: '(73, 73, 73)',
@@ -37,14 +38,46 @@
           },
           spacing: {
             '100': '100px',
-          }
+          },
         }
       }
     }
   </script>
 </head>
-<body>
-  <header></header>
+<body class="font-manrope">
+  <header class="bg-gray-100 pt-8">
+    <!-- navbar section -->
+    <nav class="container mx-auto flex justify-between items-center">
+      <div class="flex gap-1 items-center">
+        <div class="flex justify-center items-center size-8 bg-btn rounded-full">
+          <img src="./assets/arrow_icon_black.svg" alt="arrow icon">
+        </div>
+        <p class="text-3xl font-extrabold text-primary">Rinterio</p>
+      </div>
+      <ul class="hidden sm:flex gap-8 text-light">
+        <li><a style="color: rgb(73, 73, 73); font-weight: 800;" href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+      <div class="hidden sm:flex justify-center items-center gap-4">
+        <div class="flex justify-center items-center size-12 bg-white rounded-full">
+          <img src="./assets/search.svg" alt="search icon">
+        </div>
+        <div class="flex justify-center items-center size-12 bg-white rounded-full">
+          <img src="./assets/shopping_cart.svg" alt="shopping cart icon"> 
+        </div>
+        <button class="flex justify-center items-center gap-2 py-3 px-5 bg-btn rounded-[32px] text-xl font-extrabold text-header-btn">Book Consult
+          <div class="flex justify-center items-center size-7 bg-header-btn rounded-full">
+            <img src="./assets/arrow_icon_white.svg" alt="arrow icon"></button>
+          </div>
+      </div>
+      <div class="size-12 flex justify-center items-center bg-white rounded-full sm:hidden">
+        <img src="./assets/menu_icon.svg" alt="menu icon">
+      </div>
+    </nav>
+  </header>
   <main></main>
   <footer></footer>
 </body>
