@@ -46,7 +46,7 @@
   </script>
 </head>
 <body class="font-manrope">
-  <header class="bg-gray-100 pt-8 mb-100">
+  <header class="bg-gray-100 pt-8 pb-10 lg:pb-100">
     <!-- navbar section -->
     <nav class="container mx-auto flex justify-between items-center">
       <div class="flex gap-1 items-center">
@@ -55,14 +55,14 @@
         </div>
         <p class="text-3xl font-extrabold text-primary">Rinterio</p>
       </div>
-      <ul class="hidden sm:flex gap-8 text-light">
+      <ul class="hidden lg:flex gap-8 text-light">
         <li><a style="color: rgb(73, 73, 73); font-weight: 800;" href="#">Home</a></li>
         <li><a href="#">Services</a></li>
         <li><a href="#">Portfolio</a></li>
         <li><a href="#">Blog</a></li>
         <li><a href="#">Contact Us</a></li>
       </ul>
-      <div class="hidden sm:flex justify-center items-center gap-4">
+      <div class="hidden lg:flex justify-center items-center gap-4">
         <div class="flex justify-center items-center size-12 bg-white rounded-full">
           <img src="./assets/search.svg" alt="search icon">
         </div>
@@ -74,22 +74,22 @@
             <img src="./assets/arrow_icon_white.svg" alt="arrow icon"></button>
           </div>
       </div>
-      <div class="size-12 flex justify-center items-center bg-white rounded-full sm:hidden">
+      <div class="size-12 flex justify-center items-center bg-white rounded-full lg:hidden">
         <img src="./assets/menu_icon.svg" alt="menu icon">
       </div>
     </nav>
     <!-- hero section -->
-    <section class="container mx-auto pt-8 pb-10">
-      <div class="container mx-auto mb-4">
+    <section class="container mx-auto pt-8">
+      <div class="container mx-auto mb-4 lg:w-1/2">
         <img class="w-full" src="./assets/banner.png" alt="hero banner">
       </div>
-      <h1 class="text-3xl text-primary text-center font-extrabold mb-4">
+      <h1 class="text-3xl text-primary text-center font-extrabold mb-4 lg:w-4/5 lg:mx-auto lg:text-[64px] lg:leading-[87px] lg:mb-6">
         A barn house of this design has a striking appearance
       </h1>
-      <p class="text-sm text-secondary text-center font-medium mb-5">
+      <p class="text-sm text-secondary text-center font-medium mb-5 lg:w-3/5 lg:mx-auto lg:text-base lg:mb-8">
         The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.
       </p>
-      <button class="w-full flex justify-center items-center gap-2 py-3 bg-btn-op5 rounded-[32px] text-xl font-bold text-primary">
+      <button class="w-full flex justify-center items-center gap-2 py-3 bg-btn-op5 rounded-[32px] text-xl font-bold text-primary lg:max-w-52 lg:px-6 lg:box-border lg:mx-auto">
         View Details
         <div class="flex justify-center items-center size-8 bg-btn rounded-full">
           <img src="./assets/arrow_icon_black.svg" alt="arrow icon">
@@ -97,7 +97,49 @@
       </button>
     </section>
   </header>
-  <main></main>
+  <main>
+    <!-- we design section -->
+    <section class="py-8 bg-gray-200 lg:py-100">
+      <div class="container mx-auto grid grid-cols-1 gap-6 lg:grid-cols-2 lg:items-start lg:gap-10">
+        <div class="grid grid-cols-1 gap-6">
+          <div>
+            <button class="flex justify-center items-center gap-2 bg-white py-2 px-4 rounded-3xl text-secondary font-bold mb-4 mx-auto lg:ml-0 lg:mb-5">
+              <img src="./assets/arrow-right.svg" alt="arrow-right">
+              About Us
+            </button>
+            <h2 class="w-4/5 mx-auto text-2xl text-primary font-bold text-center mb-4 lg:w-full lg:text-[40px] lg:text-left lg:mb-8">We design thoughtful, liveable spaces</h2>
+            <p class="text-sm text-secondary font-medium text-center lg:text-left lg:text-base">The barn house captivates with its blend of rustic charm and 
+              modern sophistication, featuring weathered wood, sleek metal accents.</p>
+          </div>
+          <div class="flex items-start gap-5 p-5 bg-white rounded-2xl shadow lg:items-center lg:gap-6">
+            <img class="size-10 lg:size-16" src="./assets/commercial.png" alt="commercial">
+            <div>
+              <h3 class="font-extrabold text-secondary mb-2 lg:text-xl">
+                Commercial
+              </h3>
+              <p class="font-medium text-light">
+                The barn house captivates with its blend of rustic charm and modern.
+              </p>
+            </div>
+          </div>
+          <div class="flex items-start gap-5 p-5 bg-white rounded-2xl shadow lg:items-center lg:gap-6">
+            <img class="size-10 lg:size-16" src="./assets/residential.png" alt="residential">
+            <div>
+              <h3 class="font-extrabold text-secondary mb-2 lg:text-xl">
+                Residential
+              </h3>
+              <p class="font-medium text-light">
+                The barn house captivates with its blend of rustic charm and modern.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <img class="w-full lg:max-h-[560px] lg:object-cover lg:rounded-2xl" src="./assets/Rectangle.png" alt="Rectangle">
+        </div>
+      </div>
+    </section>
+  </main>
   <footer></footer>
 </body>
 </html>
