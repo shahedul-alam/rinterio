@@ -29,8 +29,9 @@
           colors: {
             'header-btn': 'rgb(28, 28, 28)',
             btn: 'rgb(171, 239, 95)',
+            'btn-op5': 'rgb(171, 239, 95, 0.5)',
             primary: 'rgb(33, 33, 33)',
-            secondary: '(73, 73, 73)',
+            secondary: 'rgb(73, 73, 73)',
             light: 'rgb(115, 115, 115)',
           },
           fontFamily: {
@@ -45,7 +46,7 @@
   </script>
 </head>
 <body class="font-manrope">
-  <header class="bg-gray-100 pt-8">
+  <header class="bg-gray-100 pt-8 mb-100">
     <!-- navbar section -->
     <nav class="container mx-auto flex justify-between items-center">
       <div class="flex gap-1 items-center">
@@ -77,6 +78,24 @@
         <img src="./assets/menu_icon.svg" alt="menu icon">
       </div>
     </nav>
+    <!-- hero section -->
+    <section class="container mx-auto pt-8 pb-10">
+      <div class="container mx-auto mb-4">
+        <img class="w-full" src="./assets/banner.png" alt="hero banner">
+      </div>
+      <h1 class="text-3xl text-primary text-center font-extrabold mb-4">
+        A barn house of this design has a striking appearance
+      </h1>
+      <p class="text-sm text-secondary text-center font-medium mb-5">
+        The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.
+      </p>
+      <button class="w-full flex justify-center items-center gap-2 py-3 bg-btn-op5 rounded-[32px] text-xl font-bold text-primary">
+        View Details
+        <div class="flex justify-center items-center size-8 bg-btn rounded-full">
+          <img src="./assets/arrow_icon_black.svg" alt="arrow icon">
+        </div>
+      </button>
+    </section>
   </header>
   <main></main>
   <footer></footer>
