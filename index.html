@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rinterio</title>
+
+  <!-- google font CDN -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+  <!-- tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        container: {
+          padding: {
+            DEFAULT: '1rem',
+            sm: '2rem',
+            lg: '4rem',
+            xl: '5rem',
+            '2xl': '6rem',
+          },
+        },
+        extend: {
+          colors: {
+            btn: 'rgb(171, 239, 95)',
+            primary: 'rgb(33, 33, 33)',
+            secondary: '(73, 73, 73)',
+            light: 'rgb(115, 115, 115)',
+          },
+          fontFamily: {
+            manrope: ["Manrope", "sans-serif"],
+          },
+          spacing: {
+            '100': '100px',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+  <header></header>
+  <main></main>
+  <footer></footer>
+</body>
+</html>
