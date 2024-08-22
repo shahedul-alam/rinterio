@@ -34,6 +34,7 @@
             primary: 'rgb(33, 33, 33)',
             secondary: 'rgb(73, 73, 73)',
             light: 'rgb(115, 115, 115)',
+            form: 'rgb(160, 160, 160)',
           },
           fontFamily: {
             manrope: ["Manrope", "sans-serif"],
@@ -242,6 +243,41 @@
         </div>
       </div>
     </section> 
+
+    <!-- discuss section -->
+    <section class="bg-[url('./assets/bg.jpg')] py-8 lg:py-100">
+      <div class="container mx-auto">
+        <div class="mb-8">
+          <button class="flex justify-center items-center gap-2 bg-btn-op2 py-2 px-4 rounded-3xl text-secondary font-bold mb-4 mx-auto lg:mb-6">
+            <img src="./assets/arrow-right.svg" alt="arrow-right">
+            Let’s Connect
+          </button>
+          <h2 class="w-4/5 mx-auto text-2xl text-primary font-bold text-center mb-4 lg:w-full lg:text-[40px] lg:mb-6">
+            Let’s Discuss Next Project
+          </h2>
+          <p class="text-sm text-secondary font-medium text-center lg:w-1/2 lg:text-base lg:mx-auto">
+            The barn house captivates with its blend of rustic charm and  modern sophistication, featuring weathered wood, sleek metal accents.
+          </p>
+        </div>
+        <form action="#" class="grid grid-cols-1 gap-6">
+          <div class="grid grid-cols-1 gap-6 lg:grid-cols-2">
+            <input class="w-full px-5 py-4 box-border rounded-[64px] placeholder:text-form font-medium" type="text" name="first-name" placeholder="First Name*" required>
+            <input class="w-full px-5 py-4 box-border rounded-[64px] placeholder:text-form font-medium" type="text" name="last-name" placeholder="Last Name*" required>
+            <input class="w-full px-5 py-4 box-border rounded-[64px] placeholder:text-form font-medium" type="number" name="phone-name" placeholder="Phone Number*" required>
+            <input class="w-full px-5 py-4 box-border rounded-[64px] placeholder:text-form font-medium" type="email" name="email" placeholder="Email*" required>
+          </div>
+          <div class="relative">
+            <input class="w-full h-60 px-5 py-4 box-border rounded-[32px] placeholder:text-form font-medium placeholder:absolute placeholder:top-5" type="text" name="message" placeholder="Write your message here" required>
+          </div>
+          <button class="w-full flex justify-center items-center gap-2 px-5 py-3 bg-btn rounded-[32px] text-xl font-bold text-header-btn lg:px-6 lg:box-border lg:mt-2">
+            View Details
+            <div class="flex justify-center items-center size-8 bg-header-btn rounded-full">
+              <img src="./assets/arrow_icon_white.svg" alt="arrow icon">
+            </div>
+          </button>
+        </form>
+      </div>
+    </section>
   </main>
   <footer></footer>
 </body>
