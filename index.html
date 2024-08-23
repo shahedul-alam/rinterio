@@ -102,7 +102,7 @@
   <main>
     <!-- we design section -->
     <section class="py-8 bg-gray-200 lg:py-100">
-      <div class="container mx-auto grid grid-cols-1 gap-6 lg:grid-cols-2 lg:items-start lg:gap-10">
+      <div class="container mx-auto grid grid-cols-1 grid-rows-[auto_300px] gap-6 lg:grid-cols-2 lg:grid-rows-1 lg:items-start lg:gap-10">
         <div class="grid grid-cols-1 gap-6">
           <div class="relative">
             <img class="hidden lg:block absolute -top-14 -left-12" src="./assets/Vector.png" alt="vector">
@@ -137,8 +137,7 @@
             </div>
           </div>
         </div>
-        <div>
-          <img class="w-full lg:max-h-[560px] lg:object-cover lg:rounded-2xl" src="./assets/Rectangle.png" alt="Rectangle">
+        <div class="h-full bg-[url('./assets/Rectangle.png')] bg-no-repeat bg-cover bg-center rounded-2xl">
         </div>
       </div>
     </section>
@@ -196,56 +195,59 @@
             The barn house captivates with its blend of rustic charm and  modern sophistication, featuring weathered wood, sleek metal accents.
           </p>
         </div>
-        <div class="grid grid-cols-1 gap-4 lg:grid-cols-12 lg:gap-6 lg:place-items-stretch">
-          <div class="bg-white p-6 rounded-2xl lg:col-span-8 lg:flex lg:gap-6 lg:justify-start lg:items-stretch">
-            <img class="w-full mb-6 lg:w-fit lg:m-0" src="./assets/img1.png" alt="img1">
-            <div>
+        <div class="grid grid-cols-1 gap-4 lg:grid-cols-12 lg:grid-rows-[227px_227px] lg:gap-6">
+          <div class="bg-white p-6 rounded-2xl order-1 lg:col-span-8 lg:flex lg:gap-6 lg:justify-start">
+            <div class="h-[200px] lg:size-full bg-[url('./assets/img1.png')] bg-no-repeat bg-cover bg-center rounded-2xl mb-6 lg:mb-0"></div>
+            <div class="lg:flex lg:flex-col lg:justify-between">
               <h2 class="text-xl text-secondary font-extrabold mb-4">
                 Commercial
               </h2>
               <p class="text-base text-light font-medium mb-5">
-                The barn house captivates with its blend of rustic charm and modern. The barn house captivates with its blend of rustic charm and modern .
+                The barn house captivates with its blend of rustic charm and modern. The barn house captivates with its blend of rustic charm and modern.
               </p>
-              <div class="flex gap-2 items-center">
-                <p class="text-base font-extrabold text-primary">View Details</p>
+              <button class="flex gap-2 items-center text-base font-extrabold text-primary">
+                View Details
                 <div class="flex justify-center items-center size-8 bg-btn rounded-full">
                   <img src="./assets/arrow_icon_black.svg" alt="arrow icon">
                 </div>
-              </div>
+              </button>
             </div>
           </div>
-          <div class="bg-white p-6 rounded-2xl lg:col-span-4">
-            <img class="w-full" src="./assets/img2.png" alt="img2">
+          <div class="bg-white p-6 rounded-2xl order-2 lg:col-span-4">
+            <div class="h-[200px] lg:size-full bg-[url('./assets/img2.png')] bg-no-repeat bg-cover bg-center rounded-2xl"></div>
           </div>            
-          <div class="bg-white p-6 rounded-2xl lg:col-span-3">
-            <img class="w-full" src="./assets/img3.png" alt="img3">
+          <div class="bg-white p-6 rounded-2xl order-5 lg:col-span-3 lg:order-3">
+            <div class="h-[200px] lg:size-full bg-[url('./assets/img3.png')] bg-no-repeat bg-cover bg-center rounded-2xl"></div>
           </div>  
-          <div class="bg-white p-6 rounded-2xl lg:col-span-6 lg:flex lg:gap-6 lg:justify-start lg:items-stretch">
-            <img class="w-full mb-6 lg:w-fit lg:m-0" src="./assets/img4.png" alt="img4">
-            <div>
+          <div class="bg-white p-6 rounded-2xl order-4 lg:col-span-6 lg:flex lg:gap-6 lg:justify-start">
+            <div class="h-[200px] lg:size-full bg-[url('./assets/img4.png')] bg-no-repeat bg-cover bg-center rounded-2xl mb-6 lg:mb-0"></div>
+            <div class="lg:flex lg:flex-col lg:justify-between">
               <h2 class="text-xl text-secondary font-extrabold mb-4">
                 Commercial
               </h2>
               <p class="text-base text-light font-medium mb-5">
-                The barn house captivates with its blend of rustic charm and modern. 
+                The barn house captivates with its blend of rustic charm and modern. Its blend of rustic charm and modern. 
               </p>
-              <div class="flex gap-2 items-center">
-                <p class="text-base font-extrabold text-primary">View Details</p>
+              <button class="flex gap-2 items-center text-base font-extrabold text-primary">
+                View Details
                 <div class="flex justify-center items-center size-8 bg-btn rounded-full">
                   <img src="./assets/arrow_icon_black.svg" alt="arrow icon">
                 </div>
-              </div>
+              </button>
             </div>
           </div>
-          <div class="bg-white p-6 rounded-2xl lg:col-span-3">
-            <img class="w-full" src="./assets/img5.png" alt="img5">
+          <div class="bg-white p-6 rounded-2xl order-3 lg:col-span-3 lg:order-5">
+            <div class="h-[200px] lg:size-full bg-[url('./assets/img5.png')] bg-no-repeat bg-cover bg-center rounded-2xl"></div>
+          </div>     
+          <div class="bg-white p-6 rounded-2xl order-6 lg:col-span-3 lg:hidden">
+            <div class="h-[200px] lg:size-full bg-[url('./assets/img5.png')] bg-no-repeat bg-cover bg-center rounded-2xl"></div>
           </div>     
         </div>
       </div>
     </section> 
 
     <!-- discuss section -->
-    <section class="bg-[url('./assets/bg.jpg')] py-8 lg:py-100">
+    <section class="bg-[url('./assets/bg.jpg')] bg-no-repeat bg-cover bg-center py-8 lg:py-100">
       <div class="container mx-auto">
         <div class="mb-8">
           <button class="flex justify-center items-center gap-2 bg-btn-op2 py-2 px-4 rounded-3xl text-secondary font-bold mb-4 mx-auto lg:mb-6">
@@ -267,7 +269,7 @@
             <input class="w-full px-5 py-4 box-border rounded-[64px] placeholder:text-form font-medium" type="email" name="email" placeholder="Email*" required>
           </div>
           <div class="relative">
-            <input class="w-full h-60 px-5 py-4 box-border rounded-[32px] placeholder:text-form font-medium placeholder:absolute placeholder:top-5" type="text" name="message" placeholder="Write your message here" required>
+            <input class="w-full pb-60 px-5 py-4 box-border rounded-[32px] font-medium placeholder:text-form" type="text" name="message" placeholder="Write your message here" required>
           </div>
           <button class="w-full flex justify-center items-center gap-2 px-5 py-3 bg-btn rounded-[32px] text-xl font-bold text-header-btn lg:px-6 lg:box-border lg:mt-2">
             View Details
